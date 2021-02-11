@@ -1,0 +1,21 @@
+//all solutions are coded in java.
+
+
+//apples and oranges problem. (only the static function is given, be sure to take input respectively)
+ static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
+        int num_apples = 0;
+        int num_oranges = 0;
+        
+        for(int i =0 ; i<apples.length;i++){
+           if(apples[i]+a>=s && apples[i]+a<=t){
+               num_apples++;
+           }
+        }
+        for(int j =0 ; j<oranges.length;j++){
+           if(oranges[j]+b>=s && oranges[j]+b<=t){
+               num_oranges++;
+           }
+            
+        System.out.println(num_apples);
+        System.out.println(num_oranges);
+        
