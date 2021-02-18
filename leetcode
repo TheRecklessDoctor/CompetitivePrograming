@@ -1,0 +1,25 @@
+// palindrome number 
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        bool flag = false;
+        int temp = 0;
+        long New = 0;
+        int old = x;
+        if(x<0){
+            flag = false;
+            }
+        else{
+            while(x>0){
+                New = (New*10)+(x%10);
+                x =x/10;
+                
+            }
+            if(New==old){
+                flag = true;
+            }else{flag = false;}
+        }
+        
+        return flag;
+    }
+};
